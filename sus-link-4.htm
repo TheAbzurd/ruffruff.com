@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Coffee Quotes</title>
+    <style>
+        .image-border {
+            border: 1px solid black;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+<meta charset="UTF-8">
+<title>Ruff Ruff</title>
+<link rel="icon" type="image/splash" href="splash.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<style>
+    .image-border {
+        border: 2px solid black; /* You can adjust the border width and color */
+        padding: 5px; /* Optional: Add some padding around the image */
+    }
+.image-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-container img {
+        border: 2px solid black; /* You can adjust the border width and color */
+        padding: 5px; /* Optional: Add some padding around the image */
+    }
+	 .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-border {
+        border: 2px solid black; /* You can adjust the border width and color */
+        margin: 10px; /* Add margin to create space between images */
+    }
+	
+	</style>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:10%">
+  <h3 class="w3-bar-item">Navigation</h3>
+  <a href="sus-link-1.htm" class="w3-bar-item w3-button">Sus Link 1</a>
+  <a href="sus-link-2.htm" class="w3-bar-item w3-button">Sus Link 2</a>
+  <a href="sus-link-3.htm" class="w3-bar-item w3-button">Sus Link 3</a>
+  <a href="sus-link-4.htm" class="w3-bar-item w3-button">Sus Link 4</a>
+
+
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:10%">
+
+<div class="w3-container w3-teal">
+  <h1>Did someone say coffee?</h1>
+</div>
+
+<img src="coffee.jpg" alt="Coffee" style="width:100%">
+
+<div class="w3-container">
+
+
+<h2>Life's Tragedy, Portrayed by Bubblegum Tears ---></h2> <img src="tears.GIF" alt="Tears" width="400" height="400" align="right">
+<hr>
+<p>In the clandestine world of esponiage, where every decision could mean the</p>
+<p>difference between success and failure, there existed one peculiar quirk</p>
+about the formidable Russian spy; an utter disdain for bubblegum-flavoured</p>
+<p>coffee. It wasn't merely a matter of preference; it was a <b>visceral</p> 
+<p>reaction</b>, a <b>defiance</b> against the whimsical and frivolous in a world</p>
+<p>dominated by shadows and secrets</p>
+<p>In the clandestine world of esponiage, where every decision could mean the</p>
+<p>difference between success and failure, there existed one peculiar quirk</p>
+about the formidable Russian spy; an utter disdain for bubblegum-flavoured</p>
+<p>coffee. It wasn't merely a matter of preference; it was a <b>visceral</p> 
+<p>reaction</b>, a <b>defiance</b> against the whimsical and frivolous in a world</p>
+
+<h2>Life's Tragedy</h2><img src="poem.png" alt="Poem" width="400" height="400" align="right">
+<p>Every Tuesday, Thursday, and Friday, like clockwork, the enigmatic</p>
+<p>Russian operative saunters into the quaint cafe, an air of mystery</p>
+<p>enveloping her every move. With a nonchalant flick of her wrist, she</p>
+<p>signals to the barista, and amidst the subtle clinks of porcelain,</p>
+<p>coffee? No, no, it's coffees, plural! A connoisseur of the caffeinated</p>
+<p>arts, she savours not just one, but a symphony of blends, each sip a </p>
+<p>testament of her refined taste and unwavering dedication to the art of</p>
+<p>esponioage</p>
+
+<p>In the clandestine world of esponiage, where every decision could mean the</p>
+<p>difference between success and failure, there existed one peculiar quirk</p>
+about the formidable Russian spy; an utter disdain for bubblegum-flavoured</p>
+<p>coffee. It wasn't merely a matter of preference; it was a <b>visceral</p> 
+<p>reaction</b>, a <b>defiance</b> against the whimsical and frivolous in a world</p>
+<p>dominated by shadows and secrets</p>
+
+<h2>The Russian spy's philosophy</h2>
+<p><i>"If you run to get the coffee, you will get it faster."</i></p>
+<img src="cup.GIF" alt="Coffee" width="900" height="500" align="left">
+<h2>Running=2 minutes faster...</h2>
+<h2>Walking=2 minuts more...</h2>
+<h2>I need to buy coffee before those fuckers drink it..."</h2>
+<h2><i>Life's too short for bad coffee-Gord Downie</i></h2>
+<h2><b>RUFF RUFF!</b></h2>
+<p>"What makes you think that I idenfity as a dog?"</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+
+<h2><b>Coffee Quotes <span style='font-size:30px;'>&#128390;</span></b></h2>
+
+<img src="images/first.png" alt="Quote" width="400" height="400" class="image-border" onclick="changeImage(this)">
+<img src="images/second.png" alt="Quote" width="400" height="400" class="image-border" onclick="changeImage(this)">
+<img src="images/third.png" alt="Quote" width="400" height="400" class="image-border" onclick="changeImage(this)">
+<img src="images/fourth.png" alt="Quote" width="400" height="400" class="image-border" onclick="changeImage(this)">
+<img src="images/fifth.png" alt="Quote" width="400" height="400" class="image-border" onclick="changeImage(this)">
+<img src="images/sixth.png" alt="Quote" width="400" height="400" class="image-border" onclick="changeImage(this)">
+
+<script>
+    function changeImage(img) {
+        // Get the filename of the clicked image without the file extension
+        var filename = img.src.split('/').pop().split('.')[0];
+        console.log("Filename: ", filename);
+        
+        // Extract the index from the filename
+        var index = parseInt(filename.match(/\d+/)[0]);
+        console.log("Index: ", index);
+        
+        // Change the source of the clicked image to the corresponding quote image
+        img.src = "images/quote" + index + ".png";
+        console.log("New source: ", img.src);
+    }
+</script>
+
+
+
+</body>
+</html>
